@@ -1,0 +1,99 @@
+/* Base styles */
+html,
+body,
+#root {
+  font-family: Arial, sans-serif;
+}
+
+.communication-page {
+  display: flex;
+
+  height: 100vh; /* Ensures full viewport height */
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+ 
+  
+
+  /* Limit section width */
+}
+.communicationNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.communicationList {
+  display: flex;
+}
+
+h2 {
+  color: #333;
+}
+
+.notification-list,
+.announcement-list {
+  background-color: rgb(31, 39, 58);
+  box-shadow: 0 4px 8px rgb(155, 153, 153);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.notification-list ul,
+.announcement-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-list ul li,
+.announcement-list ul li {
+  margin-bottom: 5px;
+}
+
+.notification-form,
+.announcement-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.notification-form input,
+.announcement-form input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.notification-form button,
+.announcement-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notification-form button:hover,
+.announcement-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .communication-page {
+    padding: 10px;
+  }
+
+  .section {
+    margin: 5px;
+  }
+}

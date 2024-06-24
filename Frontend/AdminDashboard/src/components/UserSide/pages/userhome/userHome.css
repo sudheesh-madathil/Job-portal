@@ -1,0 +1,92 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.userHomemain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e293b;
+}
+
+.Ulabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.Ulabel h1 {
+  color: white;
+}
+.searchIteam {
+  height: 60px;
+  width: 900px;
+  background: white;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(245, 241, 241, 0.35) 0px 5px 15px;
+}
+.searchlist input {
+  border: none;
+  text-align: center;
+}
+.searchlist button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  color: rgb(31, 29, 29);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-align: center;
+
+  box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+  transition: 0.3s ease;
+}
+
+.searchlist button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.JobCard {
+  border: 1px snow;
+  display: flex;
+
+  flex-direction: column;
+}
+.jobList {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  gap: 40px;
+}
+.JobIteam {
+  height: 304px;
+  width: 400px;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: rgba(245, 241, 241, 0.35) 0px 5px 15px;
+}
+.jobDetails {
+
+display: flex;
+}
+.jobdetailsList {
+  height: 500px;
+  width: 400px;
+  top: 96px;
+border: solid;
+  margin-top: 50px;
+
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(245, 241, 241, 0.35) 0px 5px 15px;
+  position: sticky;
+
+  z-index: 999;
+}

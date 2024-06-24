@@ -1,0 +1,130 @@
+/* Dashboard.css */
+
+/* Base Styles */
+/* Color Palette */
+:root {
+   --primary-color: #f2f1f8; /* Blue */
+   --secondary-color: #95a5a6; /* Gray */
+   --accent-color: #e85c5c; /* Orange */
+ } 
+  
+ /* General layout */
+ .dashboard {
+   gap: 13px;
+   background:rgb(31, 39, 58);
+display: flex;
+   font-family: Arial, sans-serif;
+   height: 100vh;
+   
+   
+ }
+ .dashboarditem{
+   display: flex;
+   gap: 40px;
+ }
+ 
+ .container {
+   width: 100%;
+   padding: 20px;
+ display: flex;
+ gap: 20px;
+ flex-direction: column;
+
+
+
+  
+ }
+ 
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: -15px;
+   margin-left: -15px;
+ 
+ }
+ 
+ .col-md-4,
+ .col-md-6 {
+   position: relative;
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+ }
+ 
+ .card {
+   border: 1px solid var(--secondary-color);
+   border-radius: 10px;
+   background-color:rgb(31, 39, 58);
+   box-shadow: 0 4px 8px rgb(155, 153, 153);
+ }
+ 
+ .card-body {
+   padding: 20px;
+ }
+ 
+ .dashboard-card-title {
+   font-size: 1.25rem;
+   margin-bottom: 15px;
+   color: var(--primary-color);
+ }
+ 
+ .dashboard-card-text {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .icon-size {
+   font-size: 2rem;
+   margin-right: 15px;
+   color: var(--primary-color);
+ }
+ 
+ .dashboard-card-value {
+   font-size: 2rem;
+   font-weight: bold;
+   color: var(--accent-color);
+ }
+ 
+ .dashboard-recent-activities {
+   list-style-type: none;
+   padding: 0;
+ }
+ 
+ .dashboard-recent-activities li {
+   margin-bottom: 10px;
+   color: var(--secondary-color);
+ }
+ 
+ @media (max-width: 768px) {
+   .row {
+     flex-direction: column;
+   }
+ 
+   .col-md-4,
+   .col-md-6 {
+     max-width: 100%;
+     flex: 0 0 100%;
+   }
+ 
+   .mb-4 {
+     margin-bottom: 1.5rem !important;
+   }
+ }
+ 
+ /* AdminHome specific styles */
+ .sidebar {
+   background-color: var(--primary-color);
+   color: #fff;
+ }
+ 
+ .sidebar .sidebar-btn-wrapper {
+   background-color: var(--secondary-color);
+   padding: 10px;
+   border-radius: 5px;
+ }
+ 
+ .sidebar .sidebar-btn-wrapper p {
+   margin: 0;
+   color: #fff;
+ }
+ 

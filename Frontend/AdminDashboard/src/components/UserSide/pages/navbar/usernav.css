@@ -1,0 +1,83 @@
+.mainnav{
+    display: flex;
+
+
+  
+
+   
+ 
+    
+
+}
+.navIteam{
+    height: 70px;
+    width: 100vw;
+    background: #040539;
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow: rgba(245, 241, 241, 0.35) 0px 5px 15px;
+ 
+
+   
+  
+
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+
+ 
+    
+
+
+}
+
+.navLogo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.navLabel{
+    display: flex;
+gap: 50px;
+
+align-items: center;
+
+
+
+
+
+
+}
+.navLabel label{
+    color:aliceblue;
+    cursor: pointer;
+font-family: 'Courier New', Courier, monospace;
+font-size: x-large;
+
+
+}
+.navIcon{
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+
+   
+
+}
+.navIcon button{
+    border: #040539;
+    border-radius: 4px;
+    color: #000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.navIcon .navmsg,
+.navIcon .navnotification,
+.navIcon .navuserprofile {
+    font-size: 2rem; /* Adjust the size as needed */
+}

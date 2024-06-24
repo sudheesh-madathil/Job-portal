@@ -1,0 +1,50 @@
+.job-reports {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .reports-content {
+    flex: 1;
+    padding: 20px;
+    color: #6b85ed;
+
+    
+  }
+  
+  .reports-content h2 {
+    color: #0c93db;
+    margin-bottom: 20px;
+
+  }
+  
+  .reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1c254a;
+    color: #fcfcfc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reports-table th, .reports-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reports-table th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .reports-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reports-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .reports-table td {
+    color: #666;
+  }
+  

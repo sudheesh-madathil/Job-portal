@@ -1,0 +1,103 @@
+/* Base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.settings-page {
+
+display: flex;
+
+
+
+
+
+
+  height: 100vh;
+}
+.paymentpage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.paymentnav{
+    width: 100%;
+}
+
+.section {
+   
+  background:rgb(31, 39, 58);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(155, 153, 153);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  text-align: center;
+  
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #f8f8f8;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.transaction-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.transaction-table tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 10px;
+  }
+
+  .section {
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .form-group label, .form-group select {
+    font-size: 14px;
+  }
+
+  .transaction-table th, .transaction-table td {
+    padding: 8px;
+  }
+}

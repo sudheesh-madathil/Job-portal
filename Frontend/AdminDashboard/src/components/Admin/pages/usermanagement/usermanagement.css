@@ -1,0 +1,144 @@
+html, body {
+  
+  margin: 0;
+  padding: 0;
+
+ 
+ 
+ 
+}
+
+.usertable {
+  display: flex;
+
+
+  gap: 10px;
+flex-direction:row;
+
+  background: rgb(31, 39, 58);
+  height: 100vh; /* Full viewport height */
+}
+
+.usernav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ margin-bottom: 200px;
+ flex-wrap: wrap;
+
+ 
+
+
+
+
+
+ /* Ensure it takes up the remaining space */
+}
+
+.user-table {
+
+
+  flex-wrap: wrap;
+  width: 100%;
+  border-collapse:collapse;
+  margin-bottom: 0px;
+  background: rgb(17, 24, 39);
+ /* Ensure it takes up the remaining space */
+}
+
+.user-table th, .user-table td {
+  border: 2px solid #949190;
+}
+
+.user-table th {
+  background-color: rgb(17, 24, 39); /* Primary color (60%) */
+  color: white;
+}
+
+.user-table tbody tr:hover {
+  background-color: #0a417d; /* Hover effect */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0;
+  color: #f8f6f6;
+}
+
+.email {
+  color: #a88f8f;
+  margin: 0;
+}
+
+.title, .department {
+  margin: 0;
+  color: #f4eded;
+  text-align: center;
+}
+
+.badge {
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  display: inline-block;
+}
+
+.badge.active {
+  background-color: #28a745; /* Secondary color (30%) */
+}
+
+.badge.onboarding {
+  background-color: #ffc107; /* Accent color (10%) */
+}
+
+.badge.awaiting {
+  background-color: #ca2f3e; /* Error or warning color */
+}
+
+.position {
+  color: #f8f5f5;
+  text-align: center;
+}
+
+.edit-btn {
+  background: #17e410;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+}
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: #eaeef1; /* Primary button color */
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+}
+
+.userlistbtn {
+  justify-content: space-around;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  text-decoration: underline;
+}
+
