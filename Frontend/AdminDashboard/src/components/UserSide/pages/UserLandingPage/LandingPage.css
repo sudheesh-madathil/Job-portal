@@ -1,0 +1,318 @@
+/* Base styles for desktop */
+.LandinMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loginDiv {
+  margin-top: 10px;
+  height: 70px;
+  width: 100%;
+  background: #040539;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 23px;
+}
+
+.welcomText {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.welcomText h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.LandingIteam {
+  height: 400px;
+  width: 100%;
+  border: solid 1;
+  background: #040539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.Iteam1 {
+  height: 300px;
+  width: 200px;
+  border: solid 2px transparent;
+  border-radius: 0px 61px 0px 101px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  flex-direction: column;
+  background: #040539;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Iteam1:hover {
+  border-color: #61dafb;
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 8px 20px;
+}
+
+.image-placeholder {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px 61px 0px 101px;
+}
+
+.Iteam1 p {
+  margin: 1px;
+  color: #585454;
+}
+
+.paraghraph p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.paraghraph {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(7, 5, 30, 1) 100%
+  );
+  text-align: center;
+}
+
+.LoginBtn {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: 0.125em;
+  --curve-size: 0.5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(
+    /* Top-left */ 0% var(--curve-size),
+    var(--curve-size) 0,
+    /* top-right */ 100% 0,
+    100% calc(100% - var(--curve-size)),
+    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+    /* bottom-right 2 */ 0 100%
+  );
+  transition: color 250ms;
+}
+
+.LoginBtn::after,
+.LoginBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.LoginBtn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+  50% {
+    background-position: 70% 100%;
+  }
+  100% {
+    background-position: 31% 0%;
+  }
+}
+
+.LoginBtn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+    /* Top-left */ var(--border-width)
+      calc(var(--curve-size) + var(--border-width) * 0.5),
+    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+  );
+  transition: clip-path 500ms;
+}
+
+.LoginBtn:where(:hover, :focus)::after {
+  clip-path: polygon(
+    /* Top-left */ calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    calc(100% - var(--border-width)) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width))
+  );
+  transition: 200ms;
+}
+
+.LoginBtn:where(:hover, :focus) {
+  color: #fff;
+}
+
+svg {
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #ecf0f5;
+  font-size: 100px;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgb(242, 243, 244);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.wrapper {
+  background-color: #07083d;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .loginDiv {
+    padding-right: 10px;
+    height: 60px;
+  }
+
+  .welcomText {
+    height: auto;
+    padding: 20px;
+  }
+
+  .LandingIteam {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .Iteam1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .paraghraph {
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .LoginBtn {
+    padding: 0.5em 1em;
+    font-size: 15px;
+  }
+
+  svg text {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginDiv {
+    padding-right: 5px;
+    height: 50px;
+  }
+
+  .LandingIteam {
+    gap: 10px;
+  }
+
+  .Iteam1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .paraghraph {
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .LoginBtn {
+    padding: 0.5em 0.8em;
+    font-size: 14px;
+  }
+
+  svg text {
+    font-size: 40px;
+  }
+}
+.study-Btn{
+  border: none;
+  background:#e0e0e0;
+  font-weight: bold;
+}

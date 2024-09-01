@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 
 const JobSchema = new mongoose.Schema({
+
   industryArea: {
     type: String,
     required: true,
@@ -41,6 +42,13 @@ const JobSchema = new mongoose.Schema({
     required: true,
 
   },
+  companyName: {
+    type: String,
+    required: true,
+
+  },
+  postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'Employer', required: true },
+  jobId: { type: String, unique: true, required: true },
 
   postedAt: {
     type: Date,

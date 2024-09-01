@@ -1,0 +1,391 @@
+.studyHomeMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  
+  
+  .studyHomIteam {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    gap: 10px;
+  }
+  
+  .StudyImg {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .StudyImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .studyText {
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgFlag {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .imgIteam {
+    height: 50px;
+    width: 50px;
+    background: #000;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .imgIteam img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .text-p {
+    margin-top: 10px;
+  }
+  
+  .text-p p {
+    color: rgb(104, 107, 109);
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .vertical {
+    border-radius: 2px;
+    height: 130px;
+    width: 5px;
+    background-color: rgb(53, 12, 216);
+  }
+  
+  .vertical-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .textNote {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textNote h2 {
+    color: #ffffff;
+  }
+  
+ 
+  
+  .bg {
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    height: 260px;
+    background: rgb(255, 255, 255);
+    /* Ensure this section is behind the .studySectiomIteam */
+  }
+  
+  .studySection {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2; /* Ensure this section is above the background */
+  }
+  .studySectiomIteam label{
+    text-transform: uppercase;
+    color: rgb(5, 5, 145);
+    font-weight: bold;
+  }
+
+
+.studySectiomIteam {
+    width: 300px;
+    height: 340px;
+    background: #ffffff;
+    text-align: center;
+    color: rgb(19, 19, 20);
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .studySectiomIteam:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .line{
+    margin-top: 10px;
+  
+    height: 1px;
+    width: 259px;
+    background: #9c9999;
+
+  }
+  .linesmall{
+    height: 30px;
+    background: #9c9999;
+    width: 1px;
+  }
+  .sectionText{
+    margin-top: 10px;
+    width: 100%;
+    height:90px;
+   
+  }
+  .sectionFooter{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .LearnMore,.enquireNow {
+    color: blue;
+  }
+.sectionText p{
+    color: #9c9999;
+}
+.destination{
+    width: 100%;
+    height: auto;
+    /* background: #424BFF;
+background: linear-gradient(to top, #424BFF 44%, #F9FEFF 96%); */
+
+    margin-top: 50px;
+}
+.chooseDestination{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.countries{
+   
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.countriesImg{
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    height: 200px;
+    position: relative; 
+ 
+}
+.contriesLogo{
+    border: solid rgb(255, 255, 255);
+margin-top: 174px;
+    height: 70px;width: 70px;
+    border-radius: 50%;
+    background: #d47e7e;
+    z-index: 2;
+    position: absolute;
+    overflow: hidden;
+
+
+ 
+
+    
+
+}
+.contriesLogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.countriesImg img {
+    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  
+    
+
+}
+.countriesLine{
+  
+    height: 1px;
+    width: 200px;
+    background: #000;
+}
+.countrieslist{
+    border-radius: 10px  ;
+    background: white;
+    height: 470px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    
+
+    
+}
+.countriesP p{
+    padding: 10px;
+  
+    color: #000;
+}
+.countrieslist label{
+    margin-top: 40px;
+    color: #b91212;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+
+}
+.LearnMorecountrie label{
+   margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(16, 12, 142);
+
+}
+.studyservice{
+margin-top: 90px;
+  width: 100%;
+  height: auto;
+
+  
+
+}
+.serviceIteam{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.serviceList{
+  height: 350px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+.serviceImg{
+  width: 100%;
+  overflow: hidden;
+}
+.serviceImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.serviceline{
+
+  height: 1px;
+  width: 200px;
+  background: #1500ff;
+  margin-top: 10px;
+}
+.serviceP{
+text-align: center;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+.serviceP p{
+
+ color: #000;
+
+
+}
+.servicetext h4{
+  text-align: center;
+  margin-top: 10px;
+color: #0a1ef5;
+font-weight: bold;
+
+}
+.serviceLearnMore h5{
+  color: #0ea2e2;
+  font-weight: bold;
+
+}
+
+
+
+
+  @media (max-width: 768px) {
+    .studyHomeMain {
+      padding: 0;
+    }
+  
+    .studyHomIteam {
+      padding: 0.5rem;
+      flex-direction: column;
+    }
+  
+    .studyText {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 0.5rem;
+    }
+  
+    .studySection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      gap: 10px;
+    }
+    .bg{
+        display: none;
+    }
+    .countries{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      gap: 10px;
+
+    }
+   .serviceIteam{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    .serviceList{
+      margin-top: 10px;
+    }
+  }
+  

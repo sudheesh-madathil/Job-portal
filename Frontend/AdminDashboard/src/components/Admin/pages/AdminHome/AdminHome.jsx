@@ -13,6 +13,7 @@ const AdminHome = () => {
 
   return (
     <div className='main' >
+    
       <CDBSidebar className='sidebarAdmin'>
         <CDBSidebarHeader prefix={<CDBIcon icon="bars" />}>
           <h5 className="m-0">Admin Panel</h5>
@@ -28,7 +29,7 @@ const AdminHome = () => {
             <CDBSidebarMenuItem icon="chart-line" onClick={() => navigate('/admin/reports')}>Reports</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="comments" onClick={() => navigate('/admin/communication')}>Communication</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="credit-card" onClick={() => navigate('/admin/paymentSettings')}>Payment Settings</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="user-plus" onClick={() => navigate('/admin/adminregister')}>Register</CDBSidebarMenuItem>
+            {/* <CDBSidebarMenuItem icon="user-plus" onClick={() => navigate('/admin/adminregister')}>Register</CDBSidebarMenuItem> */}
             <CDBSidebarMenuItem icon="sign-out-alt" onClick={() => navigate('/')}>LOG OUT</CDBSidebarMenuItem>
            
           </CDBSidebarMenu>
@@ -40,7 +41,7 @@ const AdminHome = () => {
           </div>
         </CDBSidebarFooter>
       </CDBSidebar>
-
+     
     </div>
   );
 };

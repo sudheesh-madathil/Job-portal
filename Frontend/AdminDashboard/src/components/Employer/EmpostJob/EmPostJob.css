@@ -14,7 +14,7 @@
 
 
   width: 799px;
-  height: 700px;
+  height: 600px;
   border: solid 1px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(155, 153, 153);
@@ -102,5 +102,46 @@ select {
   }
   
   .submitButn :hover {
-  background-color: #0056b3;
+  background-color: #1570d2;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .jobIteam {
+    overflow: hidden;
+    width: 100%;
+    height: auto; /* Adjust height for better mobile view */
+  }
+
+  .EmjobList {
+    flex-direction: column;
+    gap: 20px; /* Added gap for better spacing */
+  
+  }
+
+  .jobSection {
+    width: 100%;
+    height: auto; /* Adjust height for better mobile view */
+  }
+ 
+}
+
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px; /* Adjusted padding for smaller mobile view */
+  }
+
+  .jobIteam {
+    padding: 10px; /* Adjusted padding for better content spacing */
+  }
+
+  .jobSection {
+    padding: 5px; /* Adjusted padding for better content spacing */
+  }
+
+  .submitButn button {
+    max-width: 100%; /* Adjusted max-width for better mobile view */
+  }
 }

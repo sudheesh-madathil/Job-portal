@@ -1,0 +1,134 @@
+.jobHistoryContainer {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1F273A;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .jobHistoryTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; /* Ensure proper spacing for separate border collapse */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .jobHistoryTable th,
+  .jobHistoryTable td {
+    border: 1px solid blue;
+    padding: 8px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .jobHistoryTable th {
+    background-color: #051c50;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .jobHistoryTable tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .actionButton,
+  .deleteButton {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .actionButton {
+    background-color: #4CAF50;
+  }
+  
+  .deleteButton {
+    background-color: #8b0a0a;
+  }
+  
+  .actionButton:hover {
+    background-color: #45a049;
+  }
+  
+  .deleteButton:hover {
+    background-color: #a50e0e;
+  }
+  
+  .statusRejected {
+    color: red;
+  }
+  
+  .statusPending {
+    color: orange;
+  }
+  
+  .statusAccepted {
+    color: green;
+  }
+  
+  .actionBtn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .jobHistoryContainer {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .jobHistoryTable th,
+    .jobHistoryTable td {
+      padding: 6px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .jobHistoryContainer {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .jobHistoryTable th,
+    .jobHistoryTable td {
+      padding: 5px;
+      font-size: 0.85em;
+    }
+  
+    .actionBtn {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .jobHistoryContainer {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .jobHistoryTable th,
+    .jobHistoryTable td {
+      padding: 4px;
+      font-size: 0.75em;
+    }
+  
+    .actionBtn {
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    .actionButton,
+    .deleteButton {
+      padding: 4px 8px;
+      font-size: 0.75em;
+    }
+  }
+  

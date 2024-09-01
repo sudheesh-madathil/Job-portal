@@ -1,0 +1,112 @@
+.userProfileContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #0b033d;
+    color: white; 
+
+    overflow: auto; /* Add overflow:auto to allow scrolling */
+    max-height: 90vh;
+    /* Ensures text is visible against the dark background */
+  }
+  
+  .userprofilelist1 {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .userprofilelist1 p {
+    color: #4a4747;
+    margin: 0;
+  }
+  
+  .userprofilelist1 strong {
+    color: #ffffff;
+  }
+  
+  .userProfileForm, .userProfileDetails {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjust column width for label and input/text */
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  
+  .userProfileForm label, .userProfileDetails p {
+    gap: 10px;
+    margin: 0;
+    align-self: center;
+    text-align: right; /* Right align labels */
+    padding-right: 10px; /* Add some padding to the right for spacing */
+  }
+  
+  .userProfileForm input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .userEdit {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 20px;
+  }
+  
+  .userEdit button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .usersavebtn{
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  .usercancelBtn{
+    padding: 10px;
+    border: none;
+    background-color: #a1202d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  .userbutton{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .userEditBtn{
+    padding: 10px;
+    border: none;
+    background-color: #0b6fda;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .userEdit button:hover {
+    background-color: #45a049;
+  }
+  
+  .userEdit button + button {
+    background-color: #f44336;
+  }
+  
+  .userEdit button + button:hover {
+    background-color: #d32f2f;
+  }
+  

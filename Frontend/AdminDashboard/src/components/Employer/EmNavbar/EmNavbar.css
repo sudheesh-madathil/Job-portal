@@ -1,0 +1,148 @@
+
+.navcontainer{
+    
+   
+    width: 100%;
+    border: solid;
+    height: 50px;
+    
+
+}
+.navlist{
+ display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.Emmessage 
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Adjust the size as needed */
+}
+.EmSearch input{
+    border: none;
+    border-radius: 9px;
+    height: 30px;
+
+}
+.EmSearchbtn{
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+}
+.EmSearch{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.companyname{
+    color:white;
+}
+@media (max-width: 480px) {
+  .navcontainer {
+    height: auto;
+    padding: 10px 0; /* Add padding for mobile view */
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .companyname h3 {
+    font-size: 1.2rem; /* Adjust font size for mobile view */
+  }
+
+  .Emmessage {
+    font-size: 1.5rem; /* Adjust icon size for mobile view */
+  }
+
+  .EmSearch {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .EmSearch input,
+  .EmSearchbtn {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px; /* Add margin for better spacing */
+  }
+}
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navlist {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px; /* Reduce gap for mobile view */
+    }
+  
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu-items.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .EmSearch {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 0; /* Adjust margin for better alignment */
+    }
+  
+    .EmSearch input,
+    .EmSearchbtn {
+      width: 100%;
+      box-sizing: border-box; /* Ensure full width */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .navcontainer {
+      height: auto;
+      padding: 10px 0; /* Add padding for mobile view */
+    }
+  
+    .navlist {
+      flex-direction:column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .companyname h3 {
+      font-size: 1.2rem; /* Adjust font size for mobile view */
+    }
+  
+    .Emmessage {
+      font-size: 1.5rem; /* Adjust icon size for mobile view */
+    }
+  
+    .EmSearch {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .EmSearch input,
+    .EmSearchbtn {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 5px; /* Add margin for better spacing */
+    }
+  }

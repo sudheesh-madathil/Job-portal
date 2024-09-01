@@ -1,0 +1,24 @@
+.jobseeker-data-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jobseeker-data-table {
+    width: fit-content;
+    border-collapse: separate; /* Removes space between table cells */
+  }
+  
+  .jobseeker-data-table th,
+  .jobseeker-data-table td {
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center; /* Align text to the left */
+  }
+  
+  .jobseeker-data-table th {
+    background-color: #f4f4f4; /* Header background color */
+  }
+  
+  

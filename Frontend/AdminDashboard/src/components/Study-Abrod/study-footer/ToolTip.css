@@ -1,0 +1,19 @@
+/* Tooltip.css */
+.tooltip {
+    position: absolute;
+    background-color: #eb5809;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .mediaLogo:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

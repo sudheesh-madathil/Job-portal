@@ -1,83 +1,174 @@
-.mainnav{
-    display: flex;
-
-
-  
-
-   
+.mainnav {
  
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1F273A;;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.navIteam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 70px;
+  box-shadow: #fefeff;
+}
+
+.navLogo img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navLabel {
+  display: flex;
+  gap: 90px;
+}
+
+.navLabel1 {
+  text-decoration: none;
+  color: #fffcfc;
+  font-weight: bold;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 
 }
-.navIteam{
-    height: 70px;
-    width: 100vw;
-    background: #040539;
+
+.facebtn{
+  background:#1F273A;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.facebtn :hover{
+  background:#082a79;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.jobposting-btn {
+  background:#1F273A;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+.logoutBtn{
+  background:#1F273A;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+.username {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.userMenu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #051b57;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.userMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userMenu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.userMenu li:hover {
+  background-color: #5e5858;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+.UsermessageBtn{
+  border: none;
+  background:#1F273A;
+  color: white;
+  cursor: pointer;
+}
+.postJobBtn{
+  gap: 30px;
+  display: flex;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .navLabel {
+    display: none;
+  }
+
+  .hamburger {
     display: flex;
-    justify-content: space-around;
+  }
 
-    box-shadow: rgba(245, 241, 241, 0.35) 0px 5px 15px;
- 
+  .navIcon {
+    display: none;
+  }
 
-   
-  
-
-}
-.navLogo{
-    display: flex;
-    align-items: center;
-
- 
-    
-
-
-}
-
-.navLogo img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-
-}
-.navLabel{
-    display: flex;
-gap: 50px;
-
-align-items: center;
-
-
-
-
-
-
-}
-.navLabel label{
-    color:aliceblue;
-    cursor: pointer;
-font-family: 'Courier New', Courier, monospace;
-font-size: x-large;
-
-
-}
-.navIcon{
-    display: flex;
-    gap: 50px;
-    justify-content: end;
-    align-items: center;
-    cursor: pointer;
-
-   
-
-}
-.navIcon button{
-    border: #040539;
+  .dropdownMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    color: #000;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+  }
 
-}
-.navIcon .navmsg,
-.navIcon .navnotification,
-.navIcon .navuserprofile {
-    font-size: 2rem; /* Adjust the size as needed */
+  .dropdownMenu.open {
+    display: flex;
+  }
+
+  .dropdownMenu a,
+  .dropdownMenu button {
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .dropdownMenu a {
+    text-decoration: none;
+    color: #03033e;
+  }
+
+  .dropdownMenu a:hover,
+  .dropdownMenu button:hover {
+    background-color: #bc8080;
+  }
 }

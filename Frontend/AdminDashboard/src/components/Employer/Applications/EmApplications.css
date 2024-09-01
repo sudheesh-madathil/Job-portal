@@ -1,0 +1,117 @@
+.applications-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.applicationIteam {
+  border-radius: 10px 0px 0px 10px;
+  height: 200px;
+  width: 100%; /* Adjust to fit grid column */
+  border: solid blue 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userImg {
+  height: 150px;
+  width: 150px;
+  border: solid 1px;
+  border-radius: 50%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.userImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.applicationList {
+  border-radius: 10px 0px 0px 10px;
+  height: 100%; /* Ensure it fits the parent height */
+  width: calc(100% - 170px); /* Adjust width to fit remaining space */
+  border: solid blue 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  padding: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.userName {
+  border-radius: 10px 0px 0px 10px;
+  height: 50px;
+  width: 100%;
+  border: solid blue 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobName, .appview {
+  border-radius: 10px 0px 0px 10px;
+  height: 50px;
+  width: 100%;
+  border: solid blue 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eyebtn {
+  border: none;
+  background: #1F273A;
+  color: #ffffff;
+}
+
+.eyebtn:hover {
+  color: #2c6ae5;
+}
+
+.applyedjob select {
+  background: #1F273A;
+  color: #ffffff;
+  border: solid blue 1px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .applications-container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    padding: 10px;
+  }
+
+  .applicationIteam {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .userImg {
+    margin-left: 0;
+  }
+
+  .applicationList {
+    width: 100%;
+    height: auto;
+    text-wrap: wrap;
+ 
+  }
+  
+  .userName, .jobName, .appview {
+    
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+}

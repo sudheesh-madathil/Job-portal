@@ -2,14 +2,18 @@
 import './ReportingAnalytics.css';
 import { AdminHome } from '../AdminHome/AdminHome';
 import { NavBar } from '../AdminHome/navbar';
-
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 const ReportingAnalytics = () => {
-  const jobReportData = [
-    { id: 1, jobTitle: 'Software Engineer', company: 'Tech Corp', status: 'Active', applications: 45 },
-    { id: 2, jobTitle: 'Data Scientist', company: 'Data Inc.', status: 'Closed', applications: 30 },
-    { id: 3, jobTitle: 'Product Manager', company: 'Innovate LLC', status: 'Active', applications: 60 },
-    // Add more data as needed
-  ];
+  const [jobData,setjobData]= useState([])
+console.log(jobData,"jobData");
+ useEffect(()=>{
+  axios.get("http://localhost:3000/Employer").then((responce)=>{
+    setjobData(responce.data)
+  })
+
+ },[])
+
 
   return (
     <div className='job-reports'>
@@ -27,10 +31,12 @@ const ReportingAnalytics = () => {
             </tr>
           </thead>
           <tbody>
-            {jobReportData.map((report) => (
+            {jobData.map((report) => (
               <tr key={report.id}>
-                <td>{report.jobTitle}</td>
-                <td>{report.company}</td>
+                <td>{report.
+industryArea}</td>
+                <td>{report.
+companyName}</td>
                 <td>{report.status}</td>
                 <td>{report.applications}</td>
               </tr>

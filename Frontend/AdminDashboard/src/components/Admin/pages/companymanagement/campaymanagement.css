@@ -7,7 +7,7 @@ background: rgb(31, 39, 58);
 }
 
 .company-management {
-  justify-content: space-around;
+ 
 gap: 20px;
 
 display: flex;
@@ -20,9 +20,11 @@ h2 {
 
 .company-dashboard {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .company-table {
+  margin-top: 20px;
   background: rgb(17, 24, 39);
   width: 100%;
   border-collapse:collapse;

@@ -1,0 +1,55 @@
+.portLogin {
+  width: 100%;
+  height: 700px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+
+}
+.portLoginIteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 700px;
+  
+  
+   
+
+}
+.portalloginimg {
+  height: 500px;
+  width: 700px;
+  border: solid;
+  overflow: hidden;
+  background: #000;
+margin: 20px;
+border-radius: 20px;
+}
+.portLoginIteam  input{
+    gap: 20px;
+    margin: 10px;
+    width: 300px;
+
+  
+}
+.portaloginList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.PortalLoginBtn {
+  border: none;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0a56b3;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 20px;
+margin-bottom: 10px;
+}

@@ -1,34 +1,42 @@
-import  { useState } from 'react';
-
-
+import { useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function EmployerLogin() {
-    const navigate = useNavigate()
-  const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log('Login submitted:', { email, password });
-    navigate("/Employer/PostJob")
-
+    try {
+      const response = await axios.post('http://localhost:3000/Emlogin', {
+        username,
+        password,
+      });
+      console.log('Login successful:', response.data);
+      const { id } = response.data;
+   
+      navigate(`/Employer/Dashboard/${id}`);
+    } catch (err) {
+      console.error('Login error:', err);
+      setError('Invalid username or password');
+    }
   };
 
   return (
     <div className="login-container">
-
       <div className="login-box">
-        <h2>Empolyer Login</h2>
-        <form onSubmit={handleLogin}>
+        <h2>Employer Login</h2>
+        <form >
           <div className="input-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="username">Username</label>
             <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>
@@ -42,7 +50,8 @@ function EmployerLogin() {
               required
             />
           </div>
-          <button type="submit" className="login-button">Login</button>
+          {error && <p className="error">{error}</p>}
+          <button onClick={handleLogin} className="login-button">Login</button>
         </form>
         <p className="register-link">
           Dont have an account? <a href="#register">Register</a>
@@ -52,4 +61,4 @@ function EmployerLogin() {
   );
 }
 
-export {EmployerLogin};
+export { EmployerLogin };

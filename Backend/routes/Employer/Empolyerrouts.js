@@ -1,9 +1,14 @@
-// routes/jobRoutes.js
 const express = require('express');
-const  createJob  = require('../../controllers/employerController/employerController');
+const jobController = require('../../controllers/employerController/employerController');
 
 const router = express.Router();
-router.post('/', createJob.post);
+
+// Define the POST and GET routes
+router.post('/:id', jobController.createJob);
+router.get('/', jobController.getJobs);
+router.get('/postedBy/:postedBy', jobController.getJobById);
+router.delete('/:id',jobController.deleteJobById);
+router.get('/:search',jobController.searchJobsByLocation)
 
 
 module.exports = router;

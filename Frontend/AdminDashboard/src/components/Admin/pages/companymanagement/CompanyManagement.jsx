@@ -1,46 +1,32 @@
-import { useState } from "react";
-import "./campaymanagement.css";
+import { useEffect, useState } from "react";
+import "./campaymanagement.css"
 import { AdminHome } from "../AdminHome/AdminHome";
 import { NavBar } from "../AdminHome/navbar";
+import axios from "axios";
 
 const CompanyManagement = () => {
-  const initialCompanies = [
-    {
-      id: 1,
-      name: "Tech Corp",
-      email: "contact@techcorp.com",
-      status: "Active",
-      activities: "Posted 5 jobs this month",
-      feedback: "No recent feedback",
-    },
-    {
-      id: 2,
-      name: "Design Studio",
-      email: "info@designstudio.com",
-      status: "Suspended",
-      activities: "Profile updated recently",
-      feedback: "Complaint about response time",
-    },
-    {
-      id: 3,
-      name: "Finance Group",
-      email: "support@financegroup.com",
-      status: "Active",
-      activities: "Posted 3 jobs this month",
-      feedback: "Positive feedback on services",
-    },
-  ];
+  const [companies, setCompanies] = useState([]);
 
-  const [companies, setCompanies] = useState(initialCompanies);
+  useEffect(() => {
+    axios.get('http://localhost:3000/Emregister')
+      .then((response) => {
+        setCompanies(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the company data!", error);
+      });
+  }, []); // Adding empty dependency array to prevent infinite loop
 
-  const handleEdit = (id) => {
-    console.log("Edit company with id:", id);
+  const handledelete = (id) => {
+ axios.delete(`http://localhost:3000/Emregister/${id}`).then((responce)=>{
+  console.log(responce.data,"responce delete");
+ })
   };
 
   const handleSuspend = (id) => {
     setCompanies(
       companies.map((company) =>
-        company.id === id
+        company._id === id
           ? {
               ...company,
               status: company.status === "Active" ? "Suspended" : "Active",
@@ -50,58 +36,44 @@ const CompanyManagement = () => {
     );
   };
 
-  const handleFeedback = (id) => {
-    console.log("Respond to feedback for company with id:", id);
-  };
+
 
   return (
     <div className="company-management">
       <AdminHome />
-
       <div className="company-dashboard">
-        <NavBar/>
+        <NavBar />
         <table className="company-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Email</th>
+              <th>Company Name</th>
+              <th>Contact Name</th>
+              <th>Contact Email</th>
               <th>Status</th>
-              <th>Activities</th>
-              <th>Feedback</th>
+              <th>Industry</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tbody>
             {companies.map((company) => (
-              <tr key={company.id}>
-                <td>{company.name}</td>
-                <td>{company.email}</td>
+              <tr key={company._id}>
+                <td>{company.companyName}</td>
+                <td>{company.contactName}</td>
+                <td>{company.contactEmail}</td>
                 <td>
-                  <span className={`badge ${company.status.toLowerCase()}`}>
-                    {company.status}
+                  <span className={`badge ${company.status ? company.status.toLowerCase() : ''}`}>
+                    {company.status || 'Unknown'}
                   </span>
                 </td>
-                <td>{company.activities}</td>
-                <td>{company.feedback}</td>
+                <td>{company.industry}</td>
                 <td>
-                  <button
-                    className="edit-btn"
-                    onClick={() => handleEdit(company.id)}
-                  >
-                    Edit
+                  <button className="edit-btn" onClick={() => handledelete(company._id)}>
+                    delete
                   </button>
-                  <button
-                    className="suspend-btn"
-                    onClick={() => handleSuspend(company.id)}
-                  >
+                  <button className="suspend-btn" onClick={() => handleSuspend(company._id)}>
                     {company.status === "Active" ? "Suspend" : "Activate"}
                   </button>
-                  <button
-                    className="feedback-btn"
-                    onClick={() => handleFeedback(company.id)}
-                  >
-                    Feedback
-                  </button>
+               
                 </td>
               </tr>
             ))}

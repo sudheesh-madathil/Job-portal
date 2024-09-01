@@ -1,0 +1,82 @@
+.AppuserLogin{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.auth-container {
+  background-color:#1F273A;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #040539;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+
+input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.LoginBTN {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #040539;
+  color: bisque;
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.LoginBTN:hover {
+  background-color: #26267d;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 7px 20px;
+}
+
+.google-LoginBTN {
+  background-color: #db4437;
+  color: #fff;
+  border: none;
+  margin: 10px;
+}
+
+.google-LoginBTN:hover {
+  background-color: #c23321;
+ 
+
+}
+
+.toggle-text {
+  margin-top: 20px;
+  color: #333;
+}
+
+.toggle-LoginBTN {
+  background: none;
+  border: none;
+  color: #040539;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-LoginBTN:hover {
+  color: #26267d;
+}

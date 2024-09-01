@@ -1,0 +1,64 @@
+/* src/components/EmployerSidebar.css */
+
+.employer-sidebar {
+
+    width: 250px;
+    height: 670px;
+    background-color: #1F273A;
+    border: solid ;
+    color: #fff;
+    margin-top: 10px;
+
+
+
+  
+ 
+  }
+  
+  .employer-sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .employer-sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .employer-sidebar ul li {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .employer-sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .employer-sidebar ul li a:hover,
+  .employer-sidebar ul li a.active {
+    background-color: #555;
+  }
+.Emplyermain{
+  display: flex;
+  flex-direction: column;
+}
+.EmnavList{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 12px;
+}
+.EmNavIteam{
+  height: 670px;
+  width: 100%;
+  border: solid;
+  margin-top: 10px;
+
+}
